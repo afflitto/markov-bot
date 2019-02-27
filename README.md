@@ -1,6 +1,8 @@
 # markov-bot
 Quick Twitter bot using Markov chains and AWS Lambda
 
+Live example: [@imalsoblackbear](https://twitter.com/imalsoblackbear)
+
 ### Setup
 1. Run the following in the command line:
 ```

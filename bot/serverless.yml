@@ -1,4 +1,4 @@
-service: blackbear
+service: markov-bot
 
 provider:
   name: aws

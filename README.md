@@ -26,3 +26,5 @@ cp config.py.templage config.py
 5. Copy the tweets to the bot directory: `cp tweets*.json ../bot/tweets.json`
 
 6. Deploy: `cd ../bot && serverless deploy`
+
+The twitter bot will automatically run every 4 hours (or whatever you changed the rate to in `serverless.yml`). To run it manually, run `serverless invoke -f tweet`.

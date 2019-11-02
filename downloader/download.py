@@ -8,6 +8,8 @@ import re
 parser = argparse.ArgumentParser(description="Downloads a user's tweets as a json file")
 parser.add_argument('username', action="store", help='username of the twitter account you want to download')
 parser.add_argument('--include-mentions', action="store_true", dest="include_mentions", default=False, help='include @mentions in tweet output')
+parser.add_argument('--mentions_mode', action="store", default="strip", help="strip: remove @mentions (default)\nremove@: remove only the @ sign\nignore: do nothing")
+parser.add_argument('--rt_mode', action="store", default="strip", help='strip: remove "RT" characters (default)\nignore: do nothing')
 args = parser.parse_args()
 
 # set up Tweepy API

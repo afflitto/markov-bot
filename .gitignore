@@ -1,6 +1,7 @@
 config.js
 config.py
 tweets*.json
+*.pyc
 
 # Logs
 logs
